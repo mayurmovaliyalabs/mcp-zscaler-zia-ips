@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zscaler-zia-ip-mcp"
+version = "0.1.0"
+description = "MCP server and client for Zscaler ZIA registered-user IP ranges."
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=1.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+zia-ip-mcp-server = "zia_ip_mcp.server:main"
+zia-ip-mcp-client = "zia_ip_mcp.client:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
