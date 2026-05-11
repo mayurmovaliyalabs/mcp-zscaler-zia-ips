@@ -1,4 +1,4 @@
-# Zscaler ZIA IP MCP
+# MCP Zscaler ZIA IPs
 
 Python MCP server and client for looking up Zscaler ZIA registered-user IP ranges by location.
 
